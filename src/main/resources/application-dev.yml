@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/realworld
+    username: realworld
+    password: realworld
+    driver-class-name: org.postgresql.Driver
+
+decorator:
+  datasource:
+    datasource-proxy:
+      query:
+        log-level: INFO
+
+application:
+  security:
+    authentication:
+      jwt:
+        base64-secret: gQ1lddhI7a/1+jTVRiIryxW0bAhFbrfled8bCbNGXtOcu29scpcNXra+vGJepslA6LSAoO0XYvz7B144144EMg==
+        token-validity: 1h
+

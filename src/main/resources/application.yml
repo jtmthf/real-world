@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    hikari:
+      data-source-properties:
+        stringtype: unspecified
+  jpa:
+    open-in-view: false
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
